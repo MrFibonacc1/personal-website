@@ -7,57 +7,66 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
+    title: "Gym Management Application",
+    description: "Management application for a Gym allowing trainers and members to book training sessions and manage supplies",
     image: "/images/projects/1.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All", "Personal Projects"],
+    gitUrl: "https://github.com/MrFibonacc1/Healthcare-System",
+    previewUrl: "https://www.youtube.com/watch?v=etZ74wvCNTQ&t=9s",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
+    title: "AI Route Guardian",
+    description: "Detects car crashes along your route and uses AI to give advice to prevent similar accidents",
     image: "/images/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All", "Hackathons"],
+    gitUrl: "https://github.com/MrFibonacc1/Route-Guardian",
+    previewUrl: "https://github.com/MrFibonacc1/Route-Guardian",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
+    title: "Online Multiplayer Game",
+    description: "Fun online game to play with other friends",
     image: "/images/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All", "Personal Projects"],
+    gitUrl: "https://github.com/MrFibonacc1/shoot.io",
+    previewUrl: "https://github.com/MrFibonacc1/shoot.io",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
+    title: "VR Memory Lane",
+    description: "Upload your phone photos to the app, which will extract metadata and display your pictures in a 3D world for you to re-experience in VR",
     image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All", "Hackathons"],
+    gitUrl: "https://github.com/MrFibonacc1/vr-memory-maps",
+    previewUrl: "https://www.youtube.com/watch?v=qSI_GPKFuNE",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
+    title: "School Class Scheduler",
+    description: "Efficient Class Management and Booking for Schools",
     image: "/images/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All", "Personal Projects"],
+    gitUrl: "https://github.com/MrFibonacc1/Booking-Website",
+    previewUrl: "https://github.com/MrFibonacc1/Booking-Website",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
+    title: "Facial Recognition Attendance",
+    description: "Used machine learning to detect student faces and mark present for class",
     image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All", "Personal Projects"],
+    gitUrl: "https://github.com/MrFibonacc1/Facial-Recognition-Attendance",
+    previewUrl: "https://github.com/MrFibonacc1/Facial-Recognition-Attendance",
+  },
+  {
+    id: 7,
+    title: "Web Crawler",
+    description: "Crawls a given URL to extract all accessed URLs, then organizes and ranks them based on a specified phrase",
+    image: "/images/projects/7.png",
+    tag: ["All", "Personal Projects"],
+    gitUrl: "https://github.com/MrFibonacc1/web-crawler",
+    previewUrl: "https://github.com/MrFibonacc1/web-crawler",
   },
 ];
 
@@ -92,13 +101,13 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
+          name="Personal Projects"
+          isSelected={tag === "Personal Projects"}
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="Hackathons"
+          isSelected={tag === "Hackathons"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">

@@ -9,12 +9,13 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>Next.js</li>
         <li>Node.js</li>
         <li>Express</li>
         <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>React</li>
       </ul>
     ),
   },
@@ -23,8 +24,7 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>Carleton University in Ottawa, Canada</li>
       </ul>
     ),
   },
@@ -33,8 +33,7 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>Working on AWS Cloud Practitioner</li>
       </ul>
     ),
   },
@@ -57,12 +56,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+          I am a full stack web developer with a passion for creating interactive and responsive web applications. My expertise includes JavaScript, Next.js, Node.js, Express, PostgreSQL. While I enjoy working across the entire stack, I have a particular love for backend development because I thrive on understanding how things work behind the scenes. I am a quick learner, always eager to expand my knowledge and skill set. As a team player, I look forward to collaborating with others to create amazing applications.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
